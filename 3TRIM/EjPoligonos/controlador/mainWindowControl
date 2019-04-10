@@ -1,2 +1,22 @@
 //Clase controladora principal
 //pene
+
+btRectangulo.setOnAction(e ->{
+				try {
+
+					
+					FXMLLoader loadRectangulo= new FXMLLoader(getClass().getResource("../vista/vistaRectangulo.fxml"));
+					
+					Scene escenaRectangulo= new Scene(loadRectangulo.load());
+					Stage ventanaRectangulo= new Stage();
+					
+					ventanaRectangulo.setScene(escenaRectangulo);
+					ventanaRectangulo.show();
+					ventanaRectangulo.setTitle("Ventana Rectangulo");
+					
+					ControladorVistaRectangulo cerrarRectangulo = loadRectangulo.getController();
+				
+					cerrarRectangulo.cerrar(ventanaRectangulo);
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
