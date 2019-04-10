@@ -1,6 +1,9 @@
 //Clase controladora principal
-//pene
-
+//pena
+/*public void cancelLogin() {
+    cancelButton.getScene().getWindow().hide();
+}
+*/
 btRectangulo.setOnAction(e ->{
 				try {
 
